@@ -1,9 +1,9 @@
 ---
 title: "SQL databases and R"
-author: "Data Carpentry contributors"
-output:
-  html_document:
-    df_print: paged
+site: distill::distill_website
+output: 
+  distill::distill_article:
+    toc: true
 ---
 
 ```{r source, include=FALSE, purl=FALSE}
@@ -561,7 +561,3 @@ this is not suitable for very large datasets.
 **Note:** Finally, to close the connection to the mammals database you may use 
 `DBI::dbDisconnect(mammals)`; this discards all pending work and frees resources, 
 e.g. memory.
-
-
-```{r, child="_page_built_on.Rmd"}
-```

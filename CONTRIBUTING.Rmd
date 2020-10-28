@@ -1,6 +1,8 @@
-
-# Contributing
-
+---
+title: "Contributing Guidelines"
+description: |
+  Some additional details about the website
+---
 
 [Data Carpentry](https://datacarpentry.org) in an open source project, and we
 welcome contributions of all kinds: new lessons, fixes to existing material, bug
@@ -241,7 +243,3 @@ other external resources should be included in the repository whenever possible.
     <br/>
     Mail us at [team@carpentries.org](mailto:team@carpentriesorg)
     or come chat with us on [Slack](https://swc-slack-invite.herokuapp.com/).
-
-
-```{r, child="_page_built_on.Rmd"}
-```

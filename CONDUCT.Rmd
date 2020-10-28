@@ -1,4 +1,6 @@
-# Code of Conduct
+---
+title: "Code of Conduct"
+---
 
 As contributors and maintainers of this project, we pledge to respect all people
 who contribute through reporting issues, posting feature requests, updating
@@ -21,8 +23,5 @@ maintainers who do not follow the Code of Conduct may be removed from the
 project team.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by following our [reporting guidelines](https://software-carpentry.org/CoC-reporting/).
-
-
-```{r, child="_page_built_on.Rmd"}
-```
+reported by following our 
+[reporting guidelines](https://software-carpentry.org/CoC-reporting/).

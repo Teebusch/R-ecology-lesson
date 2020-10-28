@@ -1,6 +1,9 @@
 ---
 title: Manipulating, analyzing and exporting data with tidyverse
-author: Data Carpentry contributors
+site: distill::distill_website
+output: 
+  distill::distill_article:
+    toc: true
 ---
 
 ```{r, echo=FALSE, purl=FALSE, message = FALSE}
@@ -769,8 +772,4 @@ write_csv(surveys_complete, file = "data/surveys_complete.csv")
 ```{r, purl=FALSE, eval=TRUE, echo=FALSE}
 if (!dir.exists("data")) dir.create("data")
 write_csv(surveys_complete, file = "data/surveys_complete.csv")
-```
-
-
-```{r, child="_page_built_on.Rmd"}
 ```
