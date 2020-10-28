@@ -1,7 +1,9 @@
 ---
 title: "Before we start"
-author: "Data Carpentry contributors"
-minutes: 15
+site: distill::distill_website
+output: 
+  distill::distill_article:
+    toc: true
 editor_options: 
   markdown: 
     wrap: 80
@@ -11,22 +13,22 @@ editor_options:
 source("setup.R")
 ```
 
---------------------------------------------------------------------------------
 
-> ### Learning Objectives
->
-> -   Be able to explain what R and RStudio are, what they are used for, and how
->     they relate to each other.
-> -   Describe the purpose of the RStudio Script, Console, Environment, and
->     Plots panes.
-> -   Organize files and directories for a set of analyses as an R Project, and
->     understand the purpose of the working directory.
-> -   Use the built-in RStudio help interface to search for more information on
->     R functions.
-> -   Demonstrate how to provide sufficient information for troubleshooting with
->     the R user community.
+:::objectives
+### Learning Objectives
 
---------------------------------------------------------------------------------
+*  Be able to explain what R and RStudio are, what they are used for, and how
+   they relate to each other.
+*  Describe the purpose of the RStudio Script, Console, Environment, and
+   Plots panes.
+*  Organize files and directories for a set of analyses as an R Project, and
+   understand the purpose of the working directory.
+*  Use the built-in RStudio help interface to search for more information on
+   R functions.
+*  Demonstrate how to provide sufficient information for troubleshooting with
+   the R user community.
+:::
+
 
 ## What is R? What is RStudio?
 
@@ -174,8 +176,9 @@ and it can lead to hard to debug errors by having objects in memory you forgot
 you had. To turn that off, go to Tools --\> 'Global Options' and select the
 'Never' option for 'Save workspace to .RData' on exit.'
 
-![Set 'Save workspace to .RData on exit' to
-'Never'](img/rstudio-preferences.png)
+```{r layout="l-body", echo=FALSE, fig.cap="Set 'Save workspace to .RData on exit' to 'Never'"}
+knitr::include_graphics("img/rstudio-preferences.png")
+```
 
 ### Organizing your working directory
 
@@ -217,7 +220,7 @@ are only going to use one file and it will make things easier.
 
 Your working directory should now look like this:
 
-```{r, results='markup',fig.cap="How it should look like at the beginning of this lesson", echo=FALSE, purl=FALSE, out.width='100%', fig.align='center'}
+```{r layout="l-body", echo=FALSE, fig.cap="What your working directory should look like at the beginning of this lesson"}
 knitr::include_graphics("img/r-starting-how-it-should-look-like.png")
 ```
 
@@ -463,6 +466,3 @@ knitr::include_graphics("img/kitten-try-things.jpg")
 -   [This blog post by Jon
     Skeet](http://codeblog.jonskeet.uk/2010/08/29/writing-the-perfect-question/)
     has comprehensive advice on how to ask programming questions.
-
-```{r, child="_page_built_on.Rmd"}
-```

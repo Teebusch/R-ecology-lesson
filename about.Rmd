@@ -1,0 +1,21 @@
+---
+title: "About this site"
+description: |
+  Some additional details about the website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Contributors
+
+The list of contributors to this lesson is available [here](https://datacarpentry.org/R-ecology-lesson/CITATION).
+
+## Misc.
+
+Questions? Feedback? Please
+[file an issue on GitHub](https://github.com/datacarpentry/R-ecology-lesson/issues/new)
+
+Page built on `r format(Sys.time(), "%Y-%m-%d %H:%M:%S")`
+
