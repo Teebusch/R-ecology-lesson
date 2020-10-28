@@ -2,7 +2,9 @@ name: Build and Deploy Website
 
 on:
   push:
-    branches: main
+    branches:
+      - main
+      - use-distill
   pull_request: []
 
 jobs:
