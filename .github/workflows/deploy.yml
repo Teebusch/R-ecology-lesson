@@ -34,7 +34,7 @@ jobs:
 
       - name: Install needed packages
         run: |
-          install.packages(c('remotes', 'rprojroot', 'renv', 'desc', 'rmarkdown', 'knitr'))
+          install.packages(c('remotes', 'rprojroot', 'renv', 'desc', 'rmarkdown', 'knitr', 'distill'))
         shell: Rscript {0}
 
       - name: Query dependencies
