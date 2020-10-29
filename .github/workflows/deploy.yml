@@ -9,10 +9,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GH_PAT }}
-      RSPM: 'https://packagemanager.rstudio.com/cran/__linux__/focal/latest'
+      RSPM: 'https://packagemanager.rstudio.com/cran/__linux__/bionic/latest'
 
     steps:
 
@@ -31,7 +31,6 @@ jobs:
         uses: r-lib/actions/setup-r@master
         with:
           crayon.enabled: 'FALSE'
-          r-version: release
 
       - uses: r-lib/actions/setup-pandoc@v1
 
@@ -58,7 +57,7 @@ jobs:
           while read -r cmd
           do
             eval sudo $cmd
-          done < <(Rscript -e 'cat(remotes::system_requirements("ubuntu", "20.04"), sep = "\n")')
+          done < <(Rscript -e 'cat(remotes::system_requirements("ubuntu", "18.04"), sep = "\n")')
 
       - name: Build site
         run: make -B all
