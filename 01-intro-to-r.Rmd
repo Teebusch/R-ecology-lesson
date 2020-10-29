@@ -164,7 +164,6 @@ mass <- mass * 2.0      # mass?
 age  <- age - 20        # age?
 mass_index <- mass/age  # mass_index?
 ```
-:::
 
 ```{r, echo = FALSE, purl = TRUE}
 ### Challenge
@@ -177,6 +176,7 @@ mass_index <- mass/age  # mass_index?
 ## age  <- age - 20        # age?
 ## mass_index <- mass/age  # mass_index?
 ```
+:::
 
 ### Functions and their arguments
 
@@ -523,14 +523,13 @@ Can you figure out why `"four" > "five"` returns `TRUE`?
 When using ">" or "<" on strings, R compares their alphabetical order. 
 Here "four" comes after "five", and therefore is "greater than" it.
 ```
-:::
-
 
 ```{r, echo = FALSE, purl = TRUE}
 ### Challenge (optional)
 ##
 ## * Can you figure out why `"four" > "five"` returns `TRUE`?
 ```
+:::
 
 
 ## Missing data
@@ -600,9 +599,6 @@ median(heights, na.rm = TRUE)
 heights_above_67 <- heights_no_na[heights_no_na > 67]
 length(heights_above_67)
 ```
-:::
-
-
 
 ```{r, echo = FALSE, purl = TRUE}
 ## ### Challenge
@@ -614,6 +610,7 @@ length(heights_above_67)
 ##
 ## 3. Use R to figure out how many people in the set are taller than 67 inches.
 ```
+:::
 
 Now that we have learned how to write scripts, and the basics of R's data
 structures, we are ready to start working with the Portal dataset we have been

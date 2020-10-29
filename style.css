@@ -83,29 +83,29 @@ header nav .logo > img {
   filter: invert(1);
 }
 
-section.objectives, section.challenge {
+section.objectives, section.challenge, div.objectives, div.challenge {
   padding: 1em;
   margin: 1em 0;
   background-size: 70px;
   background-repeat: no-repeat;
   background-position: 15px center;
   min-height: 120px;
-  border-left: solid 5px;
+  border-left: solid 3px;
 }
 
-section.objectives {
+section.objectives, div.objectives {
   color: black;
   background-color: #F1FAEE;
   border-color: #d6ded3;
 }
 
-section.challenge {
+section.challenge, div.challenge {
   color: #1f5386;
   background-color: white;
-  border-color: #dfedff;
+  border-color: #1f5386;
 }
 
-section.challenge h3 {
+section.challenge h3, div.challenge h3 {
   color: #1f5386;
 }
 

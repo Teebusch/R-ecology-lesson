@@ -33,7 +33,7 @@ navbar:
       - text: "Visualizing data"
         href: 04-visualization-ggplot2.html
       - text: "R and SQL"
-        href: 05-r-and-sql.html
+        href: 05-r-and-databases.html
     - text: "Extras"
       menu:
       - text: "Code handout"
